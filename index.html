@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/main.css">
+    <link href='https://css.gg/css' rel='stylesheet'>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,8 +20,11 @@
 </head>
 
 <body>
-    <div class="email-modal">
+    <div class="email-modal email-modal--visible">
         <div class="email-modal__container">
+            <div class="email-modal__close-btn">
+                <!-- <i class="gg-close"></i> -->
+            </div>
             <div class="email-modal__vertical-line">
                 <div class="line pink"></div>
                 <div class="line gray"></div>
@@ -54,7 +58,7 @@
                     </button>
                 </div>
             </div>
-            <div class="email-thanks email-thanks--success">
+            <div class="email-thanks">
                 <div class="email-thanks__header">
                     <h2>Just Like Old Friends</h2>
                 </div>
@@ -68,13 +72,13 @@
                 <div class="email-thanks__message">
                     <p>We'll keep you updated on any deals, news, or gossip that comes our way!</p>
                 </div>
-                <button class="email-modal__button">
+                <button class="email-modal__button email-modal__go-shop">
                     Go Shop!
                 </button>
                 <div class="email-thanks__button"></div>
             </div>
         </div>
     </div>
+    <script src="./js/app.js"></script>
 </body>
-
 </html>
