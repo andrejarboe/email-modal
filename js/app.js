@@ -3,9 +3,18 @@ window.onload = function () {
   let emailButton = document.getElementsByClassName('email-modal__button')[0];
   let thankContainer = document.getElementsByClassName('email-thanks')[0];
   let goShopButton = document.getElementsByClassName('email-modal__go-shop')[0];
+  let closeButton = document.getElementsByClassName(
+    'email-modal__close-btn'
+  )[0];
+  let thanksCloseButton = document.getElementsByClassName(
+    'email-modal__thanks-close-btn'
+  )[0];
 
   let closeModal = () => {
     emailModal.classList.remove('email-modal--visible');
+    setTimeout(() => {
+        showModal();
+      }, 5000);
   };
 
   let showThankMessage = () => {
@@ -27,6 +36,14 @@ window.onload = function () {
     setTimeout(() => {
         showModal();
       }, 5000);
+  });
+
+  closeButton.addEventListener('click', () => {
+    closeModal();
+  });
+
+  thanksCloseButton.addEventListener('click', () => {
+    closeModal();
   });
 
 };
